@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '@components/Header'
+import Form from '@components/Form';
 import Footer from '@components/Footer'
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+        <Form />
       </main>
 
       <Footer />
