@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Form = () => {
   const [email, setEmail] = useState("");
+  const [open, setOpen] = useState(false);
 
   const encode = (data) => {
     return Object.keys(data)

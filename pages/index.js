@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import Form from '@components/Form';
+import dynamic from "next/dynamic";
+const Form = dynamic(() => import("../components/Form"), {
+  ssr: false
+});
+//import Form from '@components/Form';
 import Footer from '@components/Footer'
 
 export default function Home() {
