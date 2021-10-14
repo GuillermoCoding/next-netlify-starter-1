@@ -23,11 +23,14 @@ const Form = () => {
 
   return (
     <div>
-      <form name="testing" onSubmit={onSubmit} data-netlify={true} class="">
-        <input type="hidden" name="form-name" value="testing" />
-        <input class="" value={email} name="email" type="email" onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
-        <button type="submit">submit</button>
-      </form>
+      <button onClick={()=>{setOpen(true)}}>show form</button>
+      {open?(
+        <form name="testing" onSubmit={onSubmit} data-netlify={true} class="">
+          <input type="hidden" name="form-name" value="testing" />
+          <input class="" value={email} name="email" type="email" onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
+          <button type="submit">submit</button>
+        </form>
+      ):null}
     </div>
   );
 };
