@@ -20,6 +20,10 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+        <form name="cooling" data-netlify={true} hidden>
+          <input type="hidden" name="form-name" value="cooling" />
+          <input class="" name="email" type="email" placeholder="you@example.com" />
+        </form>
         <Form />
       </main>
 
