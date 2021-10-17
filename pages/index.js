@@ -23,6 +23,7 @@ export default function Home() {
         <form name="cooling" data-netlify={true} hidden>
           <input type="hidden" name="form-name" value="cooling" />
           <input class="" name="email" type="email" placeholder="you@example.com" />
+          <input class="" name="message" type="text" placeholder="" />
         </form>
         <Form />
       </main>
