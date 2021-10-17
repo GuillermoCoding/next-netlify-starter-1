@@ -17,7 +17,7 @@ const Form = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "testing", email })
+      body: encode({ "form-name": "cooling", email })
     });
   }
 
@@ -25,8 +25,8 @@ const Form = () => {
     <div>
       <button onClick={()=>{setOpen(true)}}>show form</button>
       {open?(
-        <form name="testing" onSubmit={onSubmit} data-netlify={true} class="">
-          <input type="hidden" name="form-name" value="testing" />
+        <form name="cooling" onSubmit={onSubmit} data-netlify={true} class="">
+          <input type="hidden" name="form-name" value="cooling" />
           <input class="" value={email} name="email" type="email" onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
           <button type="submit">submit</button>
         </form>
